@@ -32,8 +32,11 @@ Lab Exercises
 
 ### Exercise 2.4 - Continuously Send Events
 
-1. Click on _Exercise 2.4_
-2. Click on _Send_ button
+1. Launch _Runner_
+2. Click on _TrueSight Intelligence API Lab -> Events_ button
+3. Set _Iteration_ to the number of events to send
+4. Set _Dely_ to number of milli-seconds between events
+5. Click on _Start Test_ to send a continuous flow of events
 
 ![Exercise 2.4](img/ex-2.4.png)
 
