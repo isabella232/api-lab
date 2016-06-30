@@ -30,6 +30,13 @@ Lab Exercises
 
 ![Exercise 4.3](img/ex-4.3.png)
 
+### Exercise 4.4 - Continously Send Measurements
+
+1. Click on _Exercise 4.4_
+2. Click on _Send_ button
+
+![Exercise 4.3](img/ex-4.4.png)
+
 
 
 
