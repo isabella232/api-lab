@@ -11,11 +11,31 @@ Lab Exercises
 
 ### Exercise 3.1 - Metric Create
 
-### Exercise 3.2 - Metric Create with type
+1. Click on _Exercise 3.1_
+2. Click on _Send_ button
+
+![Exercise 3.1](img/ex-3.1.png)
+
+### Exercise 3.2 - Metric Create with Type
+
+1. Click on _Exercise 3.1_
+2. Click on _Send_ button
+
+![Exercise 3.1](img/ex-3.2.png)
 
 ### Exercise 3.3 - Metric Update
 
+1. Click on _Exercise 2.1_
+2. Click on _Send_ button
+
+![Exercise 3.3](img/ex-3.3.png)
+
 ### Exercise 3.4 - Metric Delete
+
+1. Click on _Exercise 2.1_
+2. Click on _Send_ button
+
+![Exercise 3.4](img/ex-3.4.png)
 
 
 

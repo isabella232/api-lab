@@ -11,7 +11,22 @@ Lab Exercises
 
 ### Exercise 2.1 - Event Create
 
-### Exercise 2.2 - Event Create with properties
+1. Click on _Exercise 2.1_
+2. Click on _Send_ button
+
+![Exercise 2.1](img/ex-2.1.png)
+
+### Exercise 2.2 - Event Create with Message and Status
+
+1. Click on _Exercise 2.2_
+2. Click on _Send_ button
+
+![Exercise 2.1](img/ex-2.2.png)
+
+### Exercise 2.3 - Event Create with properties
+
+1. Click on _Exercise 2.3_
+2. Click on _Send_ button
 
 
 

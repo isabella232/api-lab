@@ -1,18 +1,35 @@
-Lab 2 - Events API
-==================
+Lab 3 - Measurement API
+=======================
 
 Agenda
 ------
-- Overview slides of Events API
-- Live demo http bin.org
+- Overview slides of Measurement API
 - Run Labs
 
 Lab Exercises
 -------------
 
-### Exercise 2.1 - Event Create
+### Exercise 4.1 - Measurement Create
 
-### Exercise 2.2 - Event Create with properties
+1. Click on _Exercise 2.1_
+2. Click on _Send_ button
+
+![Exercise 4.1](img/ex-4.1.png)
+
+### Exercise 4.2 - Measurement Create with Application Id
+
+1. Click on _Exercise 4.1_
+2. Click on _Send_ button
+
+![Exercise 4.1](img/ex-2.1.png)
+
+### Exercise 4.3 - Measurement Delete
+
+1. Click on _Exercise 4.1_
+2. Click on _Send_ button
+
+![Exercise 4.3](img/ex-2.1.png)
+
 
 
 
