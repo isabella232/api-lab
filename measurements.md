@@ -18,17 +18,17 @@ Lab Exercises
 
 ### Exercise 4.2 - Measurement Create with Application Id
 
-1. Click on _Exercise 4.1_
+1. Click on _Exercise 4.2_
 2. Click on _Send_ button
 
-![Exercise 4.1](img/ex-2.1.png)
+![Exercise 4.2](img/ex-4.2.png)
 
 ### Exercise 4.3 - Measurement Delete
 
-1. Click on _Exercise 4.1_
+1. Click on _Exercise 4.3_
 2. Click on _Send_ button
 
-![Exercise 4.3](img/ex-2.1.png)
+![Exercise 4.3](img/ex-4.3.png)
 
 
 
