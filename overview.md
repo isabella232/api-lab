@@ -53,12 +53,3 @@ Lab Exercises
 
 ![Exercise 1.5](img/ex-1.5.png)
 
-### Exercise 1.6 - DELETE request
-
-1. Click on _Exercise 1.6_
-2. Click on _Send_ button
-
-![Exercise 1.5](img/ex-1.6.png)
-
-
-
