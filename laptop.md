@@ -1,16 +1,16 @@
 Laptop Computer Requirements
 ============================
 
-Prerequistes and Requirements
+Prerequisites and Requirements
 -----------------------------
 
-### Prerequistes
+### Prerequisites
 
 1. TSI account for each laptop
 
 ### Hardware
 
-1. Minimum 4gb memory or more
+1. Minimum 4gb memory or greater
 2. Network access to Internet
 
 ### Software
