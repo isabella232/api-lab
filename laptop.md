@@ -7,6 +7,7 @@ Prerequisites and Requirements
 ### Prerequisites
 
 1. TSI account for each laptop
+2. AWS t2.micro instance spun up for each laptop
 
 ### Hardware
 
@@ -16,9 +17,11 @@ Prerequisites and Requirements
 ### Software
 
 1. Windows 7 or later
-2. Google Chrome Browser, version x.x.x or later
-3. Curl version 7.46 or later
-4. 64bit Git for Windows 2.8.1 or later and install per instructions provided (see below for details)
+2. Google Chrome Browser, version 51.0.2704.106 or later
+3. Postman Chrome App
+4. Curl version 7.46 or later
+5. Putty version 0.67 or later
+5. 64bit Git for Windows 2.8.1 or later and install per instructions provided (see below for details)
 
 
 Git For Windows Installation Instructions
