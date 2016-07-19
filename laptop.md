@@ -6,8 +6,8 @@ Prerequisites and Requirements
 
 ### Prerequisites
 
-1. TSI account for each laptop
-2. AWS t2.micro instance spun up for each laptop
+1. TSI account for each laptop.
+2. AWS EC2 t2.micro instance spun up for each laptop.
 
 ### Hardware
 
