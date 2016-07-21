@@ -71,7 +71,7 @@ and start the labs below.
 In this exercise we will issue a simple _GET_ request to familiarize ourselves with
 the simplest form of a REST call.
 
-1. Click on _Exercise 1.1 GET request_ in the _Lab 1 - REST_ folder:
+1. Click on _1.1 GET request_ in the _Lab 1 - REST_ folder:
 
     ![Exercise 1.1](img/lab1/ex-1.1-start.png)
     
@@ -100,7 +100,7 @@ request using the [curl](https://en.wikipedia.org/wiki/CURL) utility:
 In this exercise we will observe how to send additional parameters to a _GET_ request. These additional
 parameters are know as _query parameters_.
 
-1. Click on _Exercise 1.2 GET request with parameters_ in the _Lab 1 - REST_ folder:
+1. Click on _1.2 GET request with parameters_ in the _Lab 1 - REST_ folder:
 
     ![Exercise 1.2 - Start](img/lab1/ex-1.2-start.png)
     
@@ -136,7 +136,7 @@ this course the returned type will be `application\json`.
 In the previous exercises we used the `GET` method to return information about resource designated by URL. In
 this exercise we will use the `POST` method which is typically used to create a new resource designated by the path.
 
-1. Click on _Exercise 1.3_ in the _Lab 1 - REST_ folder:
+1. Click on _1.3_ in the _Lab 1 - REST_ folder:
 
     ![Exercise 1.3 - Start](img/lab1/ex-1.3-start.png)
     
@@ -154,7 +154,7 @@ In this exercise we are again going to issue a REST call with a `POST` method bu
 this time will include a JSON document that will be used to create the resource.
 
 
-1. Click on _Exercise 1-4 POST request with JSON payload_ in the _Lab 1 - REST_ folder:
+1. Click on _1.4 POST request with JSON payload_ in the _Lab 1 - REST_ folder:
 
     ![Exercise 1.4 - Start](img/lab1/ex-1.4-start.png)
     
@@ -182,7 +182,7 @@ basic terms a `PUT` call be described as a way to update a resource. This method
 that typically we send content in the body to affect the resource: the `POST` method is for its creation, and the `PUT`
 method is for update.
 
-1. Click on _Exercise 1-5 PUT request_ in the _Lab 1 - REST_ folder:
+1. Click on _1.5 PUT request_ in the _Lab 1 - REST_ folder:
 
     ![Exercise 1.5 - Start](img/lab1/ex-1.5-start.png)
     
