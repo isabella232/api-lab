@@ -40,9 +40,14 @@ The chrome plugin and the lab material are required to be loaded to complete any
 
     ![Import API Collection](img/postman-import-link.png)
     
-6. Click on the _Import From Link_:
+6. Cut and paste this [link](https://raw.githubusercontent.com/BMCTrueSight/api-lab/master/postman/LL35-lab.json) into the URL field
 
-    ![Import API Collection](img/postman-import-link.png)
+    ![Import API Collection URL](img/postman-url.png)
+    
+7. Click the _Import_ button to load the collection.
+
+    ![Imported API Collection](img/postman-imported.png)
+    
     
 
 Lab Exercises
