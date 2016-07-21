@@ -137,19 +137,78 @@ In the previous exercises we used the `GET` method to return information about r
 this exercise we will use the `POST` method which is typically used to create a new resource designated by the path.
 
 1. Click on _Exercise 1.3_ in the _Lab 1 - REST_ folder:
-2. Click on _Send_ button
 
-![Exercise 1.3](img/ex-1.3.png)
+    ![Exercise 1.3 - Start](img/lab1/ex-1.3-start.png)
+    
+2. Observe that the method selected for the this exercise is `POST`.
+    
+3. Click on the _Send_ button to execute the `POST` method:
+
+    ![Exercise 1.3 - Sent](img/lab1/ex-1.3-sent.png)
+    
+4. Observe the resulting JSON document that is returned.
 
 ### Exercise 1.4 - POST request with JSON payload
-1. Click on _Exercise 1.4_
-2. Click on _Send_ button
 
-![Exercise 1.4](img/ex-1.4.png)
+In this exercise we are again going to issue a REST call with a `POST` method but
+this time will include a JSON document that will be used to create the resource.
+
+
+1. Click on _Exercise 1-4 POST request with JSON payload_ in the _Lab 1 - REST_ folder:
+
+    ![Exercise 1.4 - Start](img/lab1/ex-1.4-start.png)
+    
+2. Click on the _body_ column to see the JSON document to be sent with the request:
+
+    ![Exercise 1.4 - Body](img/lab1/ex-1.4-body.png)
+    
+3. To indicate the type of the content being sent in the request body, we need to configure a
+request header similar to that what was returned in previous requests to indicate a JSON document is returned in
+the content body. Click on the _header_ column to show the request header that indicates the content of the body:
+
+    ![Exercise 1.4 - Header](img/lab1/ex-1.4-header.png)
+    
+4. Click on _Send_ button to issue the `POST` request
+
+    ![Exercise 1.4 - Sent](img/lab1/ex-1.4-sent.png)
+    
+5. Observe the JSON document returned, note the `data` field contains the original JSON document that was sent
+in the `POST`.
 
 ### Exercise 1.5 - PUT request
-1. Click on _Exercise 1.5_
-2. Click on _Send_ button
 
-![Exercise 1.5](img/ex-1.5.png)
+We wrap up this initial lab to familiarizing ourself with REST by sending a REST call with a `PUT` method. In
+basic terms a `PUT` call be described as a way to update a resource. This method is similar to a `POST` in the sense
+that typically we send content in the body to affect the resource: the `POST` method is for its creation, and the `PUT`
+method is for update.
+
+1. Click on _Exercise 1-5 PUT request_ in the _Lab 1 - REST_ folder:
+
+    ![Exercise 1.5 - Start](img/lab1/ex-1.5-start.png)
+    
+2. Click on the _body_ column to view the JSON document that will be used to update the resource:
+
+    ![Exercise 1.5 - Body](img/lab1/ex-1.5-body.png)
+    
+3. Observe that the content has been marked as _raw_ with its MIME type specified as `application/json`.
+
+4. Click on the _header_ column to see that the `Content-Type` header has been set to `application/json`:
+
+    ![Exercise 1.5 - Header](img/lab1/ex-1.5-header.png)
+
+5. Click on _Send_ button to issue the request:
+
+    ![Exercise 1.5 - Sent](img/lab1/ex-1.5-sent.png)
+    
+6. Again the body of our request is returned in the `data` field of the JSON document returned in the request.
+
+
+### Lab 1 Summary
+
+This concludes our initial hands on work on issuing REST commands using Postman. In this lab we learned how to:
+
+- Get a resource with or without query parameters which typically is used to view a resource.
+- Post a resource with and without content which typically creates a resource.
+- Put a resource with content which typically updates a resource.
+
 

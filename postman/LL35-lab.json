@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "LL35 - BMC TrueSight Cloud API",
-		"_postman_id": "7f11d9da-858a-93c7-6ed3-3d76ab0ae495",
+		"_postman_id": "b2f64e3c-37e3-597c-13c5-7631c63bde77",
 		"description": "This collection consists of example REST examples along with the TrueSight Cloud REST API for:\n\n- Events\n- Metrics\n- Measurements",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -87,7 +87,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"foo\": \"bar\",\n    \"red\": true,\n    \"curly\": 101\n}"
+							"raw": "{\n    \"foo\": \"bar\",\n    \"red\": false,\n    \"curly\": 201\n}"
 						},
 						"description": ""
 					},
@@ -99,40 +99,6 @@
 			"name": "Lab 2 - Events",
 			"description": "",
 			"item": [
-				{
-					"name": "Exercise 2-3 Event Create with Application ID and Event Class",
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": {
-								"username": "david_gwartney@bmc.com",
-								"password": "api.4c7a64ed3f-8593",
-								"saveHelperData": true,
-								"showPassword": false
-							}
-						},
-						"url": "https://api.truesight.bmc.com/v1/events",
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
-							},
-							{
-								"key": "Authorization",
-								"value": "Basic ZGF2aWRfZ3dhcnRuZXlAYm1jLmNvbTphcGkuNGM3YTY0ZWQzZi04NTkz",
-								"description": ""
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"title\": \"test event\",\n    \"fingerprintFields\": [\"@title\", \"@message\"],\n    \"status\": \"OPEN\",\n    \"source\": {\"ref\": \"myhost\", \"type\": \"host\"},\n    \"properties\": {\"app_id\": \"LittleDog\"},\n    \"eventClass\": \"Dude\"\n}\n"
-						},
-						"description": ""
-					},
-					"response": []
-				},
 				{
 					"name": "Exercise 2-1 Event Create",
 					"request": {
@@ -230,6 +196,40 @@
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"title\": \"test event\",\n    \"fingerprintFields\": [\"@title\", \"@message\"],\n    \"message\": \"Hello World!\",\n    \"status\": \"OPEN\",\n    \"source\": {\"ref\": \"myhost\", \"type\": \"host\"},\n    \"properties\": {\"app_id\": \"LittleDog\"}\n}\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Exercise 2-4 Event Create with Application ID and Event Class",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "david_gwartney@bmc.com",
+								"password": "api.4c7a64ed3f-8593",
+								"saveHelperData": true,
+								"showPassword": false
+							}
+						},
+						"url": "https://api.truesight.bmc.com/v1/events",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic ZGF2aWRfZ3dhcnRuZXlAYm1jLmNvbTphcGkuNGM3YTY0ZWQzZi04NTkz",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"test event\",\n    \"fingerprintFields\": [\"@title\", \"@message\"],\n    \"status\": \"OPEN\",\n    \"source\": {\"ref\": \"myhost\", \"type\": \"host\"},\n    \"properties\": {\"app_id\": \"LittleDog\"},\n    \"eventClass\": \"Dude\"\n}\n"
 						},
 						"description": ""
 					},
