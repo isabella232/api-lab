@@ -71,11 +71,15 @@ and start the labs below.
 In this exercise we will issue a simple _GET_ request to familiarize ourselves with
 the simplest form of a REST call.
 
-1. Click on _Exercise 1.1 GET request_
+1. Click on _Exercise 1.1 GET request_ in the _Lab 1 - REST_ folder:
 
     ![Exercise 1.1](img/lab1/ex-1.1-start.png)
     
-2. Observe the selected method is _GET_ and next to it is the URL.
+2. Observe the selected method is _GET_ and next to it is the
+[URL](https://en.wikipedia.org/wiki/Uniform_Resource_Locator). The URL in this example starts with `https`
+which is the _scheme_ which indicates the HTTP protocol over secure communication or
+[HTTPS](https://en.wikipedia.org/wiki/HTTPS). This is followed by the _hostname_ in which this case is `httpbin.org`.
+Lastly there is the _path_ which designates a specific _resource_.
     
 3. Click on _Send_ button to initiate the call.
 
@@ -88,7 +92,7 @@ which contains the headers and the url sent in the original request.
 _Generate Code_ link in the upper right. For example here is the code snippet to execute the same
 request using the [curl](https://en.wikipedia.org/wiki/CURL) utility:
 
-    ![Exercise 1.1](img/lab1/ex-1.1-start.png)
+    ![Exercise 1.1 - Curl](img/lab1/ex-1.1-curl.png)
 
 
 ### Exercise 1.2 - GET request with parameters
@@ -96,20 +100,43 @@ request using the [curl](https://en.wikipedia.org/wiki/CURL) utility:
 In this exercise we will observe how to send additional parameters to a _GET_ request. These additional
 parameters are know as _query parameters_.
 
-1. Click on _Exercise 1.2 GET request with parameters_:
+1. Click on _Exercise 1.2 GET request with parameters_ in the _Lab 1 - REST_ folder:
 
-    ![Exercise 1.1](img/lab1/ex-1.2-start.png)
+    ![Exercise 1.2 - Start](img/lab1/ex-1.2-start.png)
     
-2. Click on the _Params_ button located next to the URL
+2. Click on the _Params_ button located next to the URL:
+
+    ![Exercise 1.2 - Parameters](img/lab1/ex-1.2-parameters.png)
     
-2. Click on _Send_ button
+3. For this example the are two parameters `foo` and `color` with values of `bar` and `red` respectively.
+These parameters are appended to the URL path which is displayed in URL field next to the method (_GET_ in this
+example). The separator between the URL path and the initial parameter is the `?`, subsequent parameters are followed
+by the ampersand (`&`). Values are assigned to the parameters by equals (`=`)
 
-    ![Exercise 1.1](img/lab1/ex-1.2-sent.png)
+4. Click on _Send_ button:
 
-![Exercise 1.2](img/ex-1.2.png)
+    ![Exercise 1.2 - Sent](img/lab1/ex-1.2-sent.png)
+    
+5. As in the previous exercise a JSON document is returned in the body of the response. The type of information
+returned in the body is described in an HTTP header that is sent with the response of the REST call. You can observe
+the headers in the response by clicking on the _Headers_ column to the right of the _Body_ column in the output
+window:
+
+    ![Exercise 1.2 - Headers](img/lab1/ex-1.2-headers.png)
+    
+6. The header labeled, _Content-Type_ indicates the type of the contents returned in the body and in this specific
+case the contents are `application/json`. The various types returned in the Content-Type header are the well known
+[_MIME Types_](https://en.wikipedia.org/wiki/MIME) or **Multipurpose Internet Mail Extensions** types and are
+governed by Internet standards. The current list of which can be found
+[here](http://www.iana.org/assignments/media-types/media-types.xhtml). NOTE: For all the lab examples in
+this course the returned type will be `application\json`.
 
 ### Exercise 1.3 - POST requests
-1. Click on _Exercise 1.3_
+
+In the previous exercises we used the `GET` method to return information about resource designated by URL. In
+this exercise we will use the `POST` method which is typically used to create a new resource designated by the path.
+
+1. Click on _Exercise 1.3_ in the _Lab 1 - REST_ folder:
 2. Click on _Send_ button
 
 ![Exercise 1.3](img/ex-1.3.png)
