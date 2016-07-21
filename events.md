@@ -9,7 +9,15 @@ Agenda
 Lab Exercises
 -------------
 
+In the following labs will be generating events for display in TrueSight Intelligence
+using the provide REST APIs
+
 ### Exercise 2.1 - Event Create
+
+In this initial exercise we generate an event with the minimum number of inputs. The minimum pieces
+of data to generate an event consists of:
+
+- 
 
 1. Click on _Exercise 2.1 Event Create_
 2. Click on _Send_ button

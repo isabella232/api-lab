@@ -105,8 +105,8 @@
 						"auth": {
 							"type": "basic",
 							"basic": {
-								"username": "david_gwartney@bmc.com",
-								"password": "api.4c7a64ed3f-8593",
+								"username": "{{EMAIL}",
+								"password": "{{API_TOKEN}}",
 								"saveHelperData": true,
 								"showPassword": false
 							}
@@ -117,11 +117,6 @@
 							{
 								"key": "Content-Type",
 								"value": "application/json",
-								"description": ""
-							},
-							{
-								"key": "Authorization",
-								"value": "Basic ZGF2aWRfZ3dhcnRuZXlAYm1jLmNvbTphcGkuNGM3YTY0ZWQzZi04NTkz",
 								"description": ""
 							}
 						],
@@ -139,8 +134,8 @@
 						"auth": {
 							"type": "basic",
 							"basic": {
-								"username": "david_gwartney@bmc.com",
-								"password": "api.4c7a64ed3f-8593",
+								"username": "{{EMAIL}",
+								"password": "{{API_TOKEN}}",
 								"saveHelperData": true,
 								"showPassword": false
 							}
@@ -151,11 +146,6 @@
 							{
 								"key": "Content-Type",
 								"value": "application/json",
-								"description": ""
-							},
-							{
-								"key": "Authorization",
-								"value": "Basic ZGF2aWRfZ3dhcnRuZXlAYm1jLmNvbTphcGkuNGM3YTY0ZWQzZi04NTkz",
 								"description": ""
 							}
 						],
@@ -173,8 +163,8 @@
 						"auth": {
 							"type": "basic",
 							"basic": {
-								"username": "david_gwartney@bmc.com",
-								"password": "api.4c7a64ed3f-8593",
+								"username": "{{EMAIL}}",
+								"password": "{{API_TOKEN}}",
 								"saveHelperData": true,
 								"showPassword": false
 							}
@@ -185,11 +175,6 @@
 							{
 								"key": "Content-Type",
 								"value": "application/json",
-								"description": ""
-							},
-							{
-								"key": "Authorization",
-								"value": "Basic ZGF2aWRfZ3dhcnRuZXlAYm1jLmNvbTphcGkuNGM3YTY0ZWQzZi04NTkz",
 								"description": ""
 							}
 						],
@@ -207,8 +192,8 @@
 						"auth": {
 							"type": "basic",
 							"basic": {
-								"username": "david_gwartney@bmc.com",
-								"password": "api.4c7a64ed3f-8593",
+								"username": "{{EMAIL}}",
+								"password": "{{API_TOKEN}}",
 								"saveHelperData": true,
 								"showPassword": false
 							}
@@ -219,11 +204,6 @@
 							{
 								"key": "Content-Type",
 								"value": "application/json",
-								"description": ""
-							},
-							{
-								"key": "Authorization",
-								"value": "Basic ZGF2aWRfZ3dhcnRuZXlAYm1jLmNvbTphcGkuNGM3YTY0ZWQzZi04NTkz",
 								"description": ""
 							}
 						],
