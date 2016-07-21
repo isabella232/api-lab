@@ -15,7 +15,7 @@ discussion on how to maximize the potential of the TrueSight Cloud. In this inte
 Labs
 ----
 
-- [Lab 1 - API and REST Overview](overview.md)
+- [Lab 1 - API and REST Overview](rest.md)
 - [Lab 2 - Events](events.md)
 - [Lab 3 - Metrics](metrics.md)
 - [Lab 4 - Measurements](measurements.md)
