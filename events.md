@@ -195,29 +195,39 @@ App and Type provide additional means to filter to specific set of events.
 
     ![Select Lab 2 - Events](img/lab2/ex-2.4-run.png)
     
-2. From the environment drop down select _credentials_.
+3. From the environment drop down select _credentials_.
 
     ![Exercise 2.4](img/lab2/ex-2.4-env.png)
     
-2. Set _Iteration_ to the number of times to send:
+4. Set _Iteration_ to the number of times to send:
 
     ![Exercise 2.4](img/lab2/ex-2.4-iterations.png)
     
-3. Set _Delay_ to number of milli-seconds between events
+5. Set _Delay_ to number of milli-seconds between events
 
     ![Exercise 2.4](img/lab2/ex-2.4-delay.png)
     
-4. Click on _Start Test_ to send a continuous flow of events
+6. Click on _Start Test_ to send a continuous flow of events
 
     ![Exercise 2.4](img/lab2/ex-2.4-env.png)
     
-6. Click on _TrueSight Intelligence API Lab -> Events_ button
+7. Click on _TrueSight Intelligence API Lab -> Events_ button
 
-6. To observe the event in TrueSight Intelligence navigate to:
+8. To observe the event in TrueSight Intelligence navigate to:
 [https://truesight.bmc.com/intelligence/#/events/list](https://truesight.bmc.com/intelligence/#/events/list)
 and use your credentials to login.
 
     ![Exercise 2.4](img/lab2/ex-2.4-events.png)
+    
+    
+Lab 2 Summary
+-------------
+
+In this lab we learned how to sent events and view them in TrueSight Intelligence.
+
+We created events with Application Ids and specified Event Class so we can apply additional filtering in the
+event display in TrueSight Intelligence.
+    
 
 
 
