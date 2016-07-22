@@ -14,28 +14,28 @@ Lab Exercises
 1. Click on _Exercise 2.1 Measurement Create_
 2. Click on _Send_ button
 
-![Exercise 4.1](img/ex-4.1.png)
+![Exercise 4.1](images/ex-4.1.png)
 
 ### Exercise 4.2 - Measurement Create with Timestamp
 
 1. Click on _Exercise 4.2 Measurement Create with Timestamp_
 2. Click on _Send_ button
 
-![Exercise 4.2](img/ex-4.2.png)
+![Exercise 4.2](images/ex-4.2.png)
 
 ### Exercise 4.3 - Measurement Create with Application Id
 
 1. Click on _Exercise 4.3_
 2. Click on _Send_ button
 
-![Exercise 4.3](img/ex-4.3.png)
+![Exercise 4.3](images/ex-4.3.png)
 
 ### Exercise 4.4 - Measurement Create with Application Id and Origin
 
 1. Click on _Exercise 4.4 Measurement Create with Applicatiion Id and Origin_
 2. Click on _Send_ button
 
-![Exercise 4.4](img/ex-4.4.png)
+![Exercise 4.4](images/ex-4.4.png)
 
 ### Exercise 4.5 - Continously Send Measurements
 
@@ -45,7 +45,7 @@ Lab Exercises
 4. Set _Dely_ to number of milli-seconds between measurements.
 5. Click on _Start Test_ to send a continuous flow of measurements.
 
-![Exercise 2.4](img/ex-2.4.png)
+![Exercise 2.4](images/ex-2.4.png)
 
 
 

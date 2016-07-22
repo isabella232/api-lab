@@ -31,17 +31,17 @@ When using the Git installer make sure you select the options in the installatio
 
 ### Adjusting your PATH environment
 
-![Adjust Path Environment](img/run_git_only_from_shell.png)
+![Adjust Path Environment](images/run_git_only_from_shell.png)
 
 
 ### Configure the line ending conversions
 
-![Line Endings](img/line_endings.png)
+![Line Endings](images/line_endings.png)
 
 
 ### Configure the terminal emulator to use with Git Bash
 
-![Bash Shell Terminal Emulator](img/terminal.png)
+![Bash Shell Terminal Emulator](images/terminal.png)
 
 
 
