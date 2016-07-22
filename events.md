@@ -138,6 +138,7 @@ Typical values for Severity are:
 - `ERROR`
 - `CRITICAL`
 
+
 1. Click on _2.2 - Create with Status and Severity_ from folder _Lab 2 - Events_
 
     ![Exercise 2.2](img/lab2/ex-2.2-start.png)
@@ -188,11 +189,11 @@ App and Type provide additional means to filter to specific set of events.
 
 1. Launch _Runner_ button in the upper right corner of the browser window:
 
-    ![Exercise 2.4](img/lab2/ex-2.4-runner.png)
+    ![Launch Runner](img/lab2/ex-2.4-runner.png)
 
 2. Under current run select _Lab 2 - Events_.
 
-    ![Exercise 2.4](img/lab2/ex-2.4-run.png)
+    ![Select Lab 2 - Events](img/lab2/ex-2.4-run.png)
     
 2. From the environment drop down select _credentials_.
 
@@ -200,7 +201,7 @@ App and Type provide additional means to filter to specific set of events.
     
 2. Set _Iteration_ to the number of times to send:
 
-    ![Exercise 2.4](img/lab2/ex-2.4-iteration.png)
+    ![Exercise 2.4](img/lab2/ex-2.4-iterations.png)
     
 3. Set _Delay_ to number of milli-seconds between events
 
