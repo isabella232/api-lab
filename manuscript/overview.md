@@ -12,11 +12,4 @@ discussion on how to maximize the potential of the TrueSight Cloud. In this inte
 - Learn how to visualize data in both TrueSight Intelligence and TrueSight Pulse
 - Find out how you can easily aggregate and visualize the right data in the context with your core data sources
 
-Labs
-----
-
-- [Lab 1 - API and REST Overview](rest.md)
-- [Lab 2 - Events](events.md)
-- [Lab 3 - Metrics](metrics.md)
-- [Lab 4 - Measurements](measurements.md)
 
