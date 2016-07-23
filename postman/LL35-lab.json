@@ -122,14 +122,14 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"test event\",\n    \"fingerprintFields\": [\"@title\", \"@message\"],\n    \"source\": {\"ref\": \"myhost\", \"type\": \"host\"}\n}"
+							"raw": "{\n    \"title\": \"simple event\",\n    \"fingerprintFields\": [\"@title\"],\n    \"source\": {\"ref\": \"myhost\", \"type\": \"host\"}\n}"
 						},
 						"description": ""
 					},
 					"response": []
 				},
 				{
-					"name": "2.2 - Create with Message and Status",
+					"name": "2.2 - Create with Status and Severity",
 					"request": {
 						"auth": {
 							"type": "basic",
@@ -151,14 +151,14 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"test event\",\n    \"fingerprintFields\": [\"@title\", \"@message\"],\n    \"status\": \"OPEN\",\n    \"source\": {\"ref\": \"myhost\", \"type\": \"host\"}\n}"
+							"raw": "{\n    \"title\": \"test event with status and severity\",\n    \"fingerprintFields\": [\"@title\"],\n    \"status\": \"OPEN\",\n    \"severity\": \"WARN\",\n    \"source\": {\"ref\": \"myhost\", \"type\": \"host\"}\n}"
 						},
 						"description": ""
 					},
 					"response": []
 				},
 				{
-					"name": "2.3 - Create with Application ID",
+					"name": "2.3 - Create with Application ID and Event Class",
 					"request": {
 						"auth": {
 							"type": "basic",
@@ -180,14 +180,14 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"test event\",\n    \"fingerprintFields\": [\"@title\", \"@message\"],\n    \"message\": \"Hello World!\",\n    \"status\": \"OPEN\",\n    \"source\": {\"ref\": \"myhost\", \"type\": \"host\"},\n    \"properties\": {\"app_id\": \"LittleDog\"}\n}\n"
+							"raw": "{\n    \"title\": \"test event with application id and event type\",\n    \"fingerprintFields\": [\"@title\"],\n    \"status\": \"OPEN\",\n    \"severity\": \"WARN\",\n    \"source\": {\"ref\": \"myhost\", \"type\": \"host\"},\n    \"properties\": {\"app_id\": \"LittleDog\"},\n    \"eventClass\": \"Dude\"\n}\n"
 						},
 						"description": ""
 					},
 					"response": []
 				},
 				{
-					"name": "2.4 - Create with Application ID and Event Class",
+					"name": "2.4 - Continuously Send Events",
 					"request": {
 						"auth": {
 							"type": "basic",
@@ -209,7 +209,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"test event\",\n    \"fingerprintFields\": [\"@title\", \"@message\"],\n    \"status\": \"OPEN\",\n    \"source\": {\"ref\": \"myhost\", \"type\": \"host\"},\n    \"properties\": {\"app_id\": \"LittleDog\"},\n    \"eventClass\": \"Dude\"\n}\n"
+							"raw": "{\n    \"title\": \"test event with application id and event type\",\n    \"fingerprintFields\": [\"@title\"],\n    \"status\": \"OPEN\",\n    \"severity\": \"WARN\",\n    \"source\": {\"ref\": \"myhost\", \"type\": \"host\"},\n    \"properties\": {\"app_id\": \"LittleDog\"},\n    \"eventClass\": \"Dude\"\n}\n"
 						},
 						"description": ""
 					},
@@ -243,24 +243,24 @@
 							}
 						},
 						"url": "https://api.truesight.bmc.com/v1/metrics",
-						"method": "GET",
+						"method": "POST",
 						"header": [
 							{
-								"key": "Authorization",
-								"value": "Basic ZGF2aWRfZ3dhcnRuZXlAYm1jLmNvbTphcGkuNGM3YTY0ZWQzZi04NTkz",
+								"key": "Content-Type",
+								"value": "application/json",
 								"description": ""
 							}
 						],
 						"body": {
-							"mode": "formdata",
-							"formdata": []
+							"mode": "raw",
+							"raw": "{\n   \"name\": \"MY_METRIC\",\n   \"description\": \"A cool metric I created\",\n   \"displayName\": \"My cool metric\",\n   \"displayNameShort\": \"cool metric\",\n   \"unit\": \"number\",\n   \"defaultAggregate\": \"avg\",\n   \"type\": \"MINE\"\n}"
 						},
 						"description": ""
 					},
 					"response": []
 				},
 				{
-					"name": "3.2 - Create with Type",
+					"name": "3.2 - Create Batch",
 					"event": [
 						{
 							"listen": "test",
@@ -291,14 +291,14 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n   \"name\": \"JDG_MY_METRIC\",\n   \"description\": \"A cool metric I created\",\n   \"displayName\": \"My cool metric\",\n   \"displayNameShort\": \"cool metric\",\n   \"unit\": \"number\",\n   \"defaultAggregate\": \"avg\"\n}"
+							"raw": "[\n   {\n      \"name\": \"MY_COOL_METRIC1\",\n      \"description\": \"A cool metric I created first\",\n      \"displayName\": \"My cool metric1\",\n      \"displayNameShort\": \"cool metric1\",\n      \"unit\": \"number\",\n      \"defaultAggregate\": \"avg\",\n      \"type\": \"MINE\"\n   },\n   {\n      \"name\": \"MY_COOL_METRIC2\",\n      \"description\": \"A cool metric I created second\",\n      \"displayName\": \"My cool metric2\",\n      \"displayNameShort\": \"cool metric2\",\n      \"unit\": \"percent\",\n      \"defaultAggregate\": \"avg\",\n      \"type\": \"MINE\"\n   },\n   {\n      \"name\": \"MY_COOL_METRIC3\",\n      \"description\": \"A cool metric I created third\",\n      \"displayName\": \"My cool metric3\",\n      \"displayNameShort\": \"cool metric3\",\n      \"unit\": \"duration\",\n      \"defaultAggregate\": \"avg\",\n      \"type\": \"MINE\"\n   }\n]"
 						},
 						"description": ""
 					},
 					"response": []
 				},
 				{
-					"name": "3.3 - Metric Update",
+					"name": "3.3 - Update",
 					"request": {
 						"auth": {
 							"type": "basic",
@@ -326,7 +326,7 @@
 							],
 							"variable": [
 								{
-									"value": "FOO",
+									"value": "MY_METRIC",
 									"id": "metric"
 								}
 							]
@@ -334,21 +334,21 @@
 						"method": "PUT",
 						"header": [
 							{
-								"key": "Authorization",
-								"value": "Basic ZGF2aWRfZ3dhcnRuZXlAYm1jLmNvbTphcGkuNGM3YTY0ZWQzZi04NTkz",
+								"key": "Content-Type",
+								"value": "application/json",
 								"description": ""
 							}
 						],
 						"body": {
-							"mode": "formdata",
-							"formdata": []
+							"mode": "raw",
+							"raw": "{\n   \"name\": \"MY_METRIC\",\n   \"description\": \"A cool metric I updated\",\n   \"displayName\": \"My cool metric\",\n   \"displayNameShort\": \"cool metric\",\n   \"unit\": \"number\",\n   \"defaultAggregate\": \"avg\",\n   \"type\": \"MINE\"\n}"
 						},
 						"description": ""
 					},
 					"response": []
 				},
 				{
-					"name": "3.4 - Metric Delete",
+					"name": "3.4 - Delete",
 					"request": {
 						"auth": {
 							"type": "basic",
@@ -376,16 +376,22 @@
 							],
 							"variable": [
 								{
-									"value": "",
+									"value": "MY_METRIC",
 									"id": "metric"
 								}
 							]
 						},
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
 						"body": {
-							"mode": "formdata",
-							"formdata": []
+							"mode": "raw",
+							"raw": ""
 						},
 						"description": ""
 					},
@@ -428,35 +434,6 @@
 				},
 				{
 					"name": "4.2 - Create with Timestamp",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"type": "text/javascript",
-								"exec": "tests[\"Status code is 200\"] = responseCode.code === 200;\ntests[\"Body matches string\"] = responseBody.has(\"true\");\n\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Check for success true\"] = jsonData.result.success === true;"
-							}
-						}
-					],
-					"request": {
-						"url": "https://api.truesight.bmc.com/v1/measurements",
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n   \"source\": \"myserver\",\n   \"metric\": \"CPU\",\n   \"measure\": 0.1\n}"
-						},
-						"description": ""
-					},
-					"response": []
-				},
-				{
-					"name": "4.3 - Create with Application Id",
 					"event": [
 						{
 							"listen": "test",
