@@ -223,15 +223,6 @@
 			"item": [
 				{
 					"name": "3.1 - Create",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"type": "text/javascript",
-								"exec": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\n\n\ntests[\"Body matches string\"] = responseBody.has(\"CPU\");"
-							}
-						}
-					],
 					"request": {
 						"auth": {
 							"type": "basic",
@@ -253,7 +244,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n   \"name\": \"MY_METRIC\",\n   \"description\": \"A cool metric I created\",\n   \"displayName\": \"My cool metric\",\n   \"displayNameShort\": \"cool metric\",\n   \"unit\": \"number\",\n   \"defaultAggregate\": \"avg\",\n   \"type\": \"MINE\"\n}"
+							"raw": "{\n   \"name\": \"MY_METRIC\",\n   \"description\": \"A cool metric I created\",\n   \"displayName\": \"My cool metric\",\n   \"displayNameShort\": \"cool metric\",\n   \"unit\": \"number\",\n   \"defaultAggregate\": \"avg\",\n   \"defaultResolutionMS\": 10000,\n   \"type\": \"MINE\"\n}"
 						},
 						"description": ""
 					},
@@ -280,7 +271,7 @@
 								"showPassword": false
 							}
 						},
-						"url": "https://api.truesight.bmc.com/v1/metrics",
+						"url": "https://api.truesight.bmc.com/v1/batch/metrics",
 						"method": "POST",
 						"header": [
 							{
@@ -291,7 +282,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "[\n   {\n      \"name\": \"MY_COOL_METRIC1\",\n      \"description\": \"A cool metric I created first\",\n      \"displayName\": \"My cool metric1\",\n      \"displayNameShort\": \"cool metric1\",\n      \"unit\": \"number\",\n      \"defaultAggregate\": \"avg\",\n      \"type\": \"MINE\"\n   },\n   {\n      \"name\": \"MY_COOL_METRIC2\",\n      \"description\": \"A cool metric I created second\",\n      \"displayName\": \"My cool metric2\",\n      \"displayNameShort\": \"cool metric2\",\n      \"unit\": \"percent\",\n      \"defaultAggregate\": \"avg\",\n      \"type\": \"MINE\"\n   },\n   {\n      \"name\": \"MY_COOL_METRIC3\",\n      \"description\": \"A cool metric I created third\",\n      \"displayName\": \"My cool metric3\",\n      \"displayNameShort\": \"cool metric3\",\n      \"unit\": \"duration\",\n      \"defaultAggregate\": \"avg\",\n      \"type\": \"MINE\"\n   }\n]"
+							"raw": "[\n   {\n      \"name\": \"MY_COOL_METRIC1\",\n      \"description\": \"A cool metric I created first\",\n      \"displayName\": \"My cool metric1\",\n      \"displayNameShort\": \"cool metric1\",\n      \"unit\": \"number\",\n      \"defaultAggregate\": \"avg\",\n      \"defaultResolutionMS\": 1000,\n      \"type\": \"MINE\"\n   },\n   {\n      \"name\": \"MY_COOL_METRIC2\",\n      \"description\": \"A cool metric I created second\",\n      \"displayName\": \"My cool metric2\",\n      \"displayNameShort\": \"cool metric2\",\n      \"unit\": \"percent\",\n      \"defaultAggregate\": \"avg\",\n      \"defaultResolutionMS\": 1000,\n      \"type\": \"MINE\"\n   },\n   {\n      \"name\": \"MY_COOL_METRIC3\",\n      \"description\": \"A cool metric I created third\",\n      \"displayName\": \"My cool metric3\",\n      \"displayNameShort\": \"cool metric3\",\n      \"unit\": \"duration\",\n      \"defaultAggregate\": \"avg\",\n      \"defaultResolutionMS\": 1000,\n      \"type\": \"MINE\"\n   }\n]"
 						},
 						"description": ""
 					},
@@ -341,7 +332,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n   \"name\": \"MY_METRIC\",\n   \"description\": \"A cool metric I updated\",\n   \"displayName\": \"My cool metric\",\n   \"displayNameShort\": \"cool metric\",\n   \"unit\": \"number\",\n   \"defaultAggregate\": \"avg\",\n   \"type\": \"MINE\"\n}"
+							"raw": "{\n   \"description\": \"A cool metric I updated\",\n   \"displayName\": \"My cool metric\",\n   \"displayNameShort\": \"cool metric\",\n   \"unit\": \"number\",\n   \"defaultAggregate\": \"avg\",\n   \"defaultResolutionMS\": 1000,\n   \"type\": \"MINE\"\n}"
 						},
 						"description": ""
 					},
@@ -405,16 +396,45 @@
 			"item": [
 				{
 					"name": "4.1 - Create",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"type": "text/javascript",
-								"exec": "tests[\"Status code is 200\"] = responseCode.code === 200;\ntests[\"Body matches string\"] = responseBody.has(\"true\");\n\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Check for success true\"] = jsonData.result.success === true;"
-							}
-						}
-					],
 					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "{{EMAIL}}",
+								"password": "{{API_TOKEN}}",
+								"saveHelperData": true,
+								"showPassword": false
+							}
+						},
+						"url": "https://api.truesight.bmc.com/v1/measurements",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"metric\": \"CPU\",\n   \"source\": \"myserver\",\n   \"measure\": 0.1\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "4.2 - Create with Application Id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "{{EMAIL}}",
+								"password": "{{API_TOKEN}}",
+								"saveHelperData": true,
+								"showPassword": false
+							}
+						},
 						"url": "https://api.truesight.bmc.com/v1/measurements",
 						"method": "POST",
 						"header": [
@@ -433,17 +453,26 @@
 					"response": []
 				},
 				{
-					"name": "4.2 - Create with Timestamp",
+					"name": "4.3 - Create Batch",
 					"event": [
 						{
-							"listen": "test",
+							"listen": "prerequest",
 							"script": {
 								"type": "text/javascript",
-								"exec": "tests[\"Status code is 200\"] = responseCode.code === 200;\ntests[\"Body matches string\"] = responseBody.has(\"true\");\n\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Check for success true\"] = jsonData.result.success === true;"
+								"exec": "var t = new Date()\n\npostman.setEnvironmentVariable('TIMESTAMP_1', t.getTime());\nt.setSeconds(t.getSeconds() + 1);\npostman.setEnvironmentVariable('TIMESTAMP_2', t.getTime());\nt.setSeconds(t.getSeconds() + 1);\npostman.setEnvironmentVariable('TIMESTAMP_2', t.getTime());\n"
 							}
 						}
 					],
 					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "{{EMAIL}}",
+								"password": "{{API_TOKEN}}",
+								"saveHelperData": true,
+								"showPassword": false
+							}
+						},
 						"url": "https://api.truesight.bmc.com/v1/measurements",
 						"method": "POST",
 						"header": [
@@ -451,47 +480,23 @@
 								"key": "Content-Type",
 								"value": "application/json",
 								"description": ""
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n   \"source\": \"myserver\",\n   \"metric\": \"CPU\",\n   \"measure\": 0.1\n}"
-						},
-						"description": ""
-					},
-					"response": []
-				},
-				{
-					"name": "4.4 - Create with Application Id and Origin",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"type": "text/javascript",
-								"exec": "tests[\"Status code is 200\"] = responseCode.code === 200;\ntests[\"Body matches string\"] = responseBody.has(\"true\");\n\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Check for success true\"] = jsonData.result.success === true;"
-							}
-						}
-					],
-					"request": {
-						"url": "https://api.truesight.bmc.com/v1/measurements",
-						"method": "POST",
-						"header": [
+							},
 							{
-								"key": "Content-Type",
-								"value": "application/json",
+								"key": "Authorization",
+								"value": "Basic ZGF2aWRfZ3dhcnRuZXlAYm1jLmNvbTo2MWJiNTI4OS00YTc0LTRmNmQtYTU4Yy1iYjhiZjRkNzFlNDc=",
 								"description": ""
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n   \"source\": \"myserver\",\n   \"metric\": \"CPU\",\n   \"measure\": 0.1\n}"
+							"raw": "[\n    [\n      \"myserver\",\n      \"CPU\",\n      0.1,\n      1377043134,\n      {\n         \"app_id\": \"MyApp\"\n      }\n    ],\n    [\n      \"myserver\",\n      \"CPU\",\n      0.3,\n      1377043134,\n      {\n         \"app_id\": \"MyApp\"\n      }\n    ],\n    [\n      \"myserver\",\n      \"CPU\",\n      0.7,\n      1377043134,\n      {\n         \"app_id\": \"MyApp\"\n      }\n    ]\n]"
 						},
 						"description": ""
 					},
 					"response": []
 				},
 				{
-					"name": "4.5 - Continuously Send Measurements",
+					"name": "4.4 - Continuously Send Measurements",
 					"event": [
 						{
 							"listen": "test",
@@ -502,6 +507,15 @@
 						}
 					],
 					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "{{EMAIL}}",
+								"password": "{{API_TOKEN}}",
+								"saveHelperData": true,
+								"showPassword": false
+							}
+						},
 						"url": "https://api.truesight.bmc.com/v1/measurements",
 						"method": "POST",
 						"header": [
