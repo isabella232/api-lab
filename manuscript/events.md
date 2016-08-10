@@ -10,55 +10,60 @@ Agenda
 In the following labs will be generating events for display in TrueSight Intelligence
 using the provide REST APIs
 
-Configuring Authorization
--------------------------
-
-### TrueSight Cloud API Authorization
+TrueSight Cloud API Authorization
+-------------------------------------
 
 The previous REST labs did not require authorization which is not the case with the TrueSight Cloud APIs.
 
-Each participant was provided with an account which contains the e-mail and API token need to provide
+Each participant was provided with an account which contains the e-mail and API token needed to provide
 authorization to execute REST API calls
 
-#### Configuring Postman Environment
+### Configuring Postman Environment
 
-A Postman environment is means to parameterize inputs when making REST calls. This next procedure will
-configure and environment so that you only need to provide your credentials once.
+A Postman _environment_ is means to parameterize inputs when making REST calls. This next procedure will
+configure an environment so that you only need to provide your credentials once.
 
 1. Launch the Postman application if not already running.
 
 2. Click on the drop down menu in the upper right corner labeled _No environment_ and select
 _Manage Environments_.
 
+    ![Manage Environments](images/lab2/manage-env-dropdown.png)
+
+3. The following pop-window is displayed:
+
     ![Manage Environments](images/lab2/manage-env.png)
 
-3. In the dialog that appears click on the _Import_ button.
+
+4. Click on the _Import_ button.
 
     ![Manage Environments](images/lab2/manage-env-import.png)
     
-4. Click on the button _Choose Files_:
+5. Click on the button _Choose Files_:
 
-    ![Manage Environments](images/lab2/manage-env-select.png)
-    
-5. Select the file `LL35-credentials.json` and click the _Open_ button:
+    ![Manage Environments](images/lab2/manage-env-choose.png)
+
+6. Select the file `LL35-credentials.json` and click the _Open_ button:
 
     ![Manage Environments](images/lab2/manage-env-file-open.png)
     
-6. Click on the link labeled _Credentials_:
+7. Click on the link labeled _Credentials_:
 
     ![Manage Environments](images/lab2/manage-env-credentials.png)
     
-7. Next to the _EMAIL_ type the e-mail for your account:
+8. Next to the _EMAIL_ type the e-mail for your account:
 
     ![Manage Environments](images/lab2/manage-env-email.png)
     
-8. Next to the _API_TOKEN_ type the API Token for your account:
+9. Next to the _API_TOKEN_ type the API Token for your account:
 
     ![Manage Environments](images/lab2/manage-env-api-token.png)
     
-9. Click on the _Update_ button to save your e-mail and api token.
+10. Click on the _Update_ button to save your e-mail and api token.
 
-10. Dismiss the _Manage Environments_ dialog by clicking on the X in the upper right.
+    ![Manage Environments](images/lab2/manage-env-update-button.png)
+
+11. Dismiss the _Manage Environments_ dialog by clicking on the X in the upper right.
 
 Lab Exercises
 -------------
