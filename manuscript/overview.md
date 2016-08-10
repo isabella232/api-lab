@@ -1,4 +1,4 @@
-# Lab LL35 — Hands-on Lab
+# Lab LL35 — Hands-On Lab
 
 **Understanding the BMC TrueSight Cloud REST-Based API and Ingest Data**
 
