@@ -1,7 +1,7 @@
 Lab 1 - API and REST Overview
 =============================
 
-Provides a brief tutorial on ReST and an introduction to the TrueSight Intelligence APIs
+Provides a brief overview REST with interactive exercises using a RESTful.
 
 Agenda
 ------
@@ -14,15 +14,22 @@ Agenda
 Postman Installation and Configuration
 --------------------------------------
 
-This lab and proceeding labs use the PostMan Chrome plugin for executing REST commands.
+This lab and proceeding labs use the PostMan Chrome application for executing REST commands.
 
-The chrome plugin and the lab material are required to be loaded to complete any of the labs.
+The chrome plugin and the lab material are required to be loaded to complete any of the labs that
+follow through out this course.
 
 
 ### Installation
 
-1. Launch Chrome Browser
-2. Install Postman [here](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en)
+1. Launch Chrome browser
+2. Install Postman by clicking on or cutting and pasting the following link in your Chrome browswer: [https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en)
+    ![Postman Chrome Download](images/postman-download.png)
+3. Click on the button labeled, _+ ADD TO CHROME_, to install the Postman Chrome application.
+4. In the pop-up dialog click on the button labeled, _Add app_.
+    ![Postman Chrome Install](images/postman-install.png)
+5. Installation of Postman is then complete:
+    ![Postman Chrome Installed](images/postman-installed.png)
 
 ### Importing Lab Exercises
 
@@ -151,7 +158,7 @@ this exercise we will use the `POST` method which is typically used to create a 
 ### Exercise 1.4 - POST request with JSON payload
 
 In this exercise we are again going to issue a REST call with a `POST` method but
-this time will include a JSON document that will be used to create the resource.
+this time we will include a JSON document that will be used to create the resource.
 
 
 1. Click on _1.4 POST request with JSON payload_ in the _Lab 1 - REST_ folder:
@@ -177,8 +184,8 @@ in the `POST`.
 
 ### Exercise 1.5 - PUT request
 
-We wrap up this initial lab to familiarizing ourself with REST by sending a REST call with a `PUT` method. In
-basic terms a `PUT` call be described as a way to update a resource. This method is similar to a `POST` in the sense
+We wrap up this lab by sending a REST call with a `PUT` method. In basic terms a `PUT` call
+is described as a way to update a resource. This method is similar to a `POST` in the sense
 that typically we send content in the body to affect the resource: the `POST` method is for its creation, and the `PUT`
 method is for update.
 
@@ -207,8 +214,8 @@ method is for update.
 
 This concludes our initial hands on work on issuing REST commands using Postman. In this lab we learned how to:
 
-- Get a resource with or without query parameters which typically is used to view a resource.
-- Post a resource with and without content which typically creates a resource.
-- Put a resource with content which typically updates a resource.
+- `GET` a resource with or without query parameters which typically is used to view a resource.
+- `POST` a resource with and without content which typically creates a resource.
+- `PUT` a resource with content which typically updates a resource.
 
 
