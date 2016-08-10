@@ -67,6 +67,10 @@ _Manage Environments_.
 
     ![Dismiss Manage Environments windows](images/lab2/manage-env-dismiss.png)
 
+12. Select the _Credentials_ environment by selecting _Credentials_ in the upper right drop down menu.
+
+    ![Select Credentials environment](images/lab2/manage-env-select-environment.png)
+
 Lab Exercises
 -------------
 
