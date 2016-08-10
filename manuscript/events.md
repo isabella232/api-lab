@@ -74,7 +74,7 @@ _Manage Environments_.
 Lab Exercises
 -------------
 
-The following exercises will familiarize you with the event APIs.
+The following exercises will introduce you to the event APIs.
 
 ### Getting Started
 
@@ -95,18 +95,20 @@ of data to generate an event consists of:
 
 1. Click on _2.1 Event Create_ in the folder _Lab 2 - Events_
 
-    ![Exercise 2.1](images/lab2/ex-2.1-start.png)
+    ![Click on Exercise 2.1](images/lab2/ex-2.1-start.png)
     
 2. Click on the _body_ tab to view the JSON document that contains the minimum required fields to create an event:
 
-    ![Exercise 2.1](images/lab2/ex-2.1-body.png)
+    ![Click on body tab](images/lab2/ex-2.1-body.png)
     
 3. Click on the _Authorization_ tab:
 
-    ![Exercise 2.1](images/lab2/ex-2.1-authorization.png)
+    ![Click authorization tab](images/lab2/ex-2.1-authorization.png)
     
 4. Click on the _Update Request_ button to add the authorization header to the request from the _credentials_
 environment previously configured.
+
+    ![Update request](images/lab2/ex-2.1-update-request.png)
     
 5. Click the _Send_ button:
 
@@ -123,9 +125,7 @@ and use your credentials to login.
 8. Observe that _Title_ and the _Source_ that which was included in the JSON document occupies
 the _Title_ and _Source Ref_ respectively. The _Status_,  _Type_, and _Severity_ are not known since they were not specified.
 
-9. Also of note is the status code returned is 202 rather than the typical 200. **TODO** How to answer this in a
-positive way or get fixed.
-
+9. Also of note is the status code returned is 202 rather than the typical 200.
 
 ### Exercise 2.2 - Event Create with Status and Severity
 
