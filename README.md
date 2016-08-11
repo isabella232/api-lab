@@ -6,3 +6,7 @@
 - [Lab 3 - Metrics](manuscript/metrics.md)
 - [Lab 4 - Measurements](manuscript/measurements.md)
 
+
+_[How to Author content](authoring.md)_
+
+
