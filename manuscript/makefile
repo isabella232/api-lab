@@ -4,6 +4,7 @@ SOURCE_DOC = $(TARGET).md
 TARGET_DOC = $(TARGET).docx
 TARGET_LATEX = $(TARGET).latex
 TARGET_PDF = $(TARGET).pdf
+TARGET_LOG = $(TARGET).log
 
 doc: $(SOURCE_DOC)
 	pandoc -f markdown -t docx $(SOURCE_DOC) -o $(TARGET_DOC)
@@ -18,4 +19,4 @@ latex: $(SOURCE_DOC)
 	pandoc -f markdown -t latex -o $(TARGET_LATEX) $(SOURCE_DOC)
 
 clean:
-	$(RM) $(SOURCE_DOC) $(TARGET_DOC) $(TARGET_LATEX)
+	$(RM) $(SOURCE_DOC) $(TARGET_DOC) $(TARGET_LATEX) $(TARGET_LOG)
