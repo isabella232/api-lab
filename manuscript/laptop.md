@@ -44,4 +44,4 @@ When using the Git installer make sure you select the options in the installatio
 ![Bash Shell Terminal Emulator](images/terminal.png)
 
 
-
+****

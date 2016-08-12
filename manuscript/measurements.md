@@ -64,4 +64,4 @@ This exercise shows how to create multiple measurements in a single call.
     ![Exercise 4.3 Measurement Create Response](images/lab4/ex-4.3-body.png)
 
 
-
+****
