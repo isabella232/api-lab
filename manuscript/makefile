@@ -1,4 +1,7 @@
-PAGES = overview.md postman.md rest.md events.md metrics.md measurements.md
+INTRO_PAGES = overview.md
+LAB_PAGES = rest.md events.md metrics.md measurements.md
+SETUP_PAGES=postman_ama_credentials.md postman_import_creds.md
+PAGES= $(INTRO_PAGES) $(SETUP_PAGES) $(LAB_PAGES)
 TARGET = api-lab
 SOURCE_DOC = $(TARGET).md
 TARGET_DOC = $(TARGET).docx

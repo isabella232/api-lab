@@ -3,8 +3,7 @@ Lab 2 - Events API
 
 Agenda
 ------
-- Overview slides of Event API
-- Configure Authorization
+- [TSI API Documentation](https://documentation.truesight.bmc.com/overview)
 - Run Labs
 
 In the following labs will be generating events for display in TrueSight Intelligence
