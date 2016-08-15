@@ -92,3 +92,5 @@ Lab 3 Summary
 In this lab we complete several exercises to create, update, and remove metrics. Metrics are definitions that contain
 metadata that control how graphs are displayed.
 
+
+****

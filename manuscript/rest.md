@@ -11,48 +11,7 @@ Agenda
 - Run Labs
 - Overview slides of API
 
-Postman Installation and Configuration
---------------------------------------
 
-This lab and proceeding labs use the PostMan Chrome application for executing REST commands.
-
-The chrome plugin and the lab material are required to be loaded to complete any of the labs that
-follow through out this course.
-
-### Installation
-
-1. Launch Chrome browser
-2. Install Postman by clicking on or cutting and pasting the following link in your Chrome browswer: [https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en)
-    ![Postman Download](images/postman-download.png)
-3. Click on the button labeled, _+ ADD TO CHROME_, to install the Postman Chrome application.
-4. In the pop-up dialog click on the button labeled, _Add app_.
-    ![Postman Install](images/postman-install.png)
-5. Installation of Postman is then complete:
-    ![Postman Installed](images/postman-installed.png)
-6. Bypass signing up for an account by clicking the link _Skip this, go straight to the app_.
-    ![Postman Sign-up](images/postman-login.png)
-7. Which displays the Postman Chrome application:
-    ![Postman Sign-up](images/postman-start.png)
-
-### Importing Lab Exercises
-
-1. Launch Chrome Browser
-2. Type the following URI into the browser address bar: `chrome://apps`.
-3. Click on the Postman icon as shown here:
-
-    ![Postman Chrome Application](images/postman-launch.png)
-4. Click on the _Import_ button which displays a pop-up window:
-    ![Import API Collection](images/postman-import-button.png)
-5. Which displays a pop-up window:
-    ![Import API Collection](images/postman-import.png)
-6. Click on the _Import From Link_:
-    ![Import API Collection](images/postman-import-link.png)
-7. Cut and paste this [link](https://raw.githubusercontent.com/BMCTrueSight/api-lab/master/postman/LL35-lab.json) into the URL field
-    ![Import API Collection URL](images/postman-url.png)
-8. Click the _Import_ button to load the collection.
-    ![Imported API Collection](images/postman-imported.png)
-    
-    
 
 Lab Exercises
 -------------
@@ -178,4 +137,4 @@ This concludes our initial hands on work on issuing REST commands using Postman.
 - `POST` a resource with and without content which typically creates a resource.
 - `PUT` a resource with content which typically updates a resource.
 
-
+****

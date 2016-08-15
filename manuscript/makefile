@@ -1,4 +1,4 @@
-PAGES = overview.md rest.md events.md metrics.md measurements.md
+PAGES = overview.md postman.md rest.md events.md metrics.md measurements.md
 TARGET = api-lab
 SOURCE_DOC = $(TARGET).md
 TARGET_DOC = $(TARGET).docx
