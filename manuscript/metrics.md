@@ -3,7 +3,7 @@ Lab 3 - Metric API
 
 Agenda
 ------
-- Overview slides of Metric API
+- [TSI API Documentation](https://documentation.truesight.bmc.com/overview)
 - Run Labs
 
 Metrics

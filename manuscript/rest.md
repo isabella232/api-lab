@@ -7,9 +7,7 @@ Agenda
 ------
 - Overview slides of REST
 - Live demo httpbin.org
-- Postman Setup
 - Run Labs
-- Overview slides of API
 
 
 

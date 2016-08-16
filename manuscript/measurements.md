@@ -3,7 +3,7 @@ Lab 4 - Measurement API
 
 Agenda
 ------
-- Overview slides of Measurement API
+- [TSI API Documentation](https://documentation.truesight.bmc.com/overview)
 - Run Labs
 
 Measurements
