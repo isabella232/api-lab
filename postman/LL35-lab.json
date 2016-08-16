@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "LL35 - BMC TrueSight Cloud API",
-		"_postman_id": "b7b20ee6-6e4c-9df8-d717-471b38d505cf",
+		"_postman_id": "1b628a10-d3a3-5c2e-d6c6-8fe52fc3b79f",
 		"description": "This collection consists of example REST examples along with the TrueSight Cloud REST API for:\n\n- Events\n- Metrics\n- Measurements",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -446,7 +446,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n   \"source\": \"MY_BUSINESS_METRIC\",\n   \"metric\": \"CPU\",\n   \"measure\": 0.1\n}"
+							"raw": "{\n   \"metric\": \"MY_BUSINESS_METRIC\",\n   \"source\": \"myserver\",\n   \"measure\": 0.1,\n   \"metadata\": {\n       \"app_id\": \"My App\"\n   }\n}"
 						},
 						"description": ""
 					},
@@ -459,7 +459,7 @@
 							"listen": "prerequest",
 							"script": {
 								"type": "text/javascript",
-								"exec": "var t = new Date()\n\npostman.setEnvironmentVariable('TIMESTAMP_1', t.getTime());\nt.setSeconds(t.getSeconds() + 1);\npostman.setEnvironmentVariable('TIMESTAMP_2', t.getTime());\nt.setSeconds(t.getSeconds() + 1);\npostman.setEnvironmentVariable('TIMESTAMP_2', t.getTime());\n"
+								"exec": "var t = new Date()\n\npostman.setEnvironmentVariable('TIMESTAMP_1', t.getTime());\nt.setSeconds(t.getSeconds() + 1);\npostman.setEnvironmentVariable('TIMESTAMP_2', t.getTime());\nt.setSeconds(t.getSeconds() + 1);\npostman.setEnvironmentVariable('TIMESTAMP_3', t.getTime());\n"
 							}
 						}
 					],
@@ -480,16 +480,11 @@
 								"key": "Content-Type",
 								"value": "application/json",
 								"description": ""
-							},
-							{
-								"key": "Authorization",
-								"value": "Basic ZGF2aWRfZ3dhcnRuZXlAYm1jLmNvbTo2MWJiNTI4OS00YTc0LTRmNmQtYTU4Yy1iYjhiZjRkNzFlNDc=",
-								"description": ""
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "[\n    [\n      \"myserver\",\n      \"MY_BUSINESS_METRIC_1\",\n      0.1,\n      1377043134,\n      {\n         \"app_id\": \"MyApp\"\n      }\n    ],\n    [\n      \"myserver\",\n      \"MY_BUSINESS_METRIC_1\",\n      0.3,\n      1377043134,\n      {\n         \"app_id\": \"MyApp\"\n      }\n    ],\n    [\n      \"myserver\",\n      \"MY_BUSINESS_METRIC_1\",\n      0.7,\n      1377043134,\n      {\n         \"app_id\": \"MyApp\"\n      }\n    ]\n]"
+							"raw": "[\n    [\n      \"myserver\",\n      \"MY_BUSINESS_METRIC_1\",\n      0.1,\n      {{TIMESTAMP_1}},\n      {\n         \"app_id\": \"MyApp\"\n      }\n    ],\n    [\n      \"myserver\",\n      \"MY_BUSINESS_METRIC_2\",\n      0.3,\n      {{TIMESTAMP_2}},\n      {\n         \"app_id\": \"MyApp\"\n      }\n    ],\n    [\n      \"myserver\",\n      \"MY_BUSINESS_METRIC_3\",\n      0.7,\n      {{TIMESTAMP_3}},\n      {\n         \"app_id\": \"MyApp\"\n      }\n    ]\n]"
 						},
 						"description": ""
 					},
