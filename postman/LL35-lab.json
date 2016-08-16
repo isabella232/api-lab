@@ -367,7 +367,7 @@
 							],
 							"variable": [
 								{
-									"value": "MY_METRIC",
+									"value": "MY_BUSINESS_METRIC",
 									"id": "metric"
 								}
 							]
